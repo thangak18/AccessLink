@@ -1,0 +1,19 @@
+# Local scratch files and environments
+tmp/
+.venv*/
+__pycache__/
+*.pyc
+.DS_Store
+
+# Credentials and environment-specific settings
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Application dependencies and build output
+node_modules/
+.next/
+dist/
+coverage/

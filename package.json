@@ -1,0 +1,23 @@
+{
+  "name": "accesslink",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "tsx scripts/emit-fixtures.ts && vitest run",
+    "typecheck": "tsc --noEmit",
+    "dev:api": "tsx src/server.ts",
+    "seed:demo": "tsx src/infrastructure/db/seed-demo.ts",
+    "emit:fixtures": "tsx scripts/emit-fixtures.ts"
+  },
+  "dependencies": {
+    "pg": "^8.13.1",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.5",
+    "@types/pg": "^8.11.10",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3",
+    "vitest": "^3.0.5"
+  }
+}

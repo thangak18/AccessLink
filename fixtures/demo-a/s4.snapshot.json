@@ -1,0 +1,698 @@
+{
+  "dataset_id": "demo-a",
+  "name": "Khu demo A",
+  "environment": "demo",
+  "version": 1,
+  "data_kind": "simulated",
+  "is_simulated": true,
+  "timezone": "Asia/Ho_Chi_Minh",
+  "geometry_note": "Tọa độ là sơ đồ giả lập của Khu demo A. Chiều dài chặng lấy length_m trong fixture, không đo từ hình học và không dùng để dẫn đường.",
+  "published_at": "2026-09-26T02:00:00.000Z",
+  "places": [
+    {
+      "id": "place_a",
+      "name": "Cửa hàng A",
+      "aliases": [
+        "A"
+      ],
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          106.6968,
+          10.7768
+        ]
+      },
+      "operator_id": null,
+      "entrance_node_id": "A"
+    },
+    {
+      "id": "place_b",
+      "name": "Cửa hàng B",
+      "aliases": [
+        "B"
+      ],
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          106.6962,
+          10.7774
+        ]
+      },
+      "operator_id": null,
+      "entrance_node_id": "B"
+    },
+    {
+      "id": "place_c",
+      "name": "Cửa hàng C",
+      "aliases": [
+        "C"
+      ],
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          106.6942,
+          10.776
+        ]
+      },
+      "operator_id": null,
+      "entrance_node_id": "C"
+    }
+  ],
+  "operations": [
+    {
+      "place_id": "place_a",
+      "status": "open",
+      "opening_windows": [
+        {
+          "start": "06:00",
+          "end": "22:00"
+        }
+      ],
+      "evidence_ids": [
+        "evidence_place_hours"
+      ],
+      "review_due_at": "2026-10-02T02:00:00.000Z"
+    },
+    {
+      "place_id": "place_b",
+      "status": "open",
+      "opening_windows": [
+        {
+          "start": "06:00",
+          "end": "22:00"
+        }
+      ],
+      "evidence_ids": [
+        "evidence_place_hours"
+      ],
+      "review_due_at": "2026-10-02T02:00:00.000Z"
+    },
+    {
+      "place_id": "place_c",
+      "status": "open",
+      "opening_windows": [
+        {
+          "start": "06:00",
+          "end": "22:00"
+        }
+      ],
+      "evidence_ids": [
+        "evidence_place_hours"
+      ],
+      "review_due_at": "2026-10-02T02:00:00.000Z"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "O",
+      "place_id": null,
+      "type": "origin",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.695,
+          10.776
+        ]
+      },
+      "label": "Điểm xuất phát",
+      "evidence_ids": [
+        "evidence_layout_survey"
+      ]
+    },
+    {
+      "id": "P",
+      "place_id": null,
+      "type": "parking",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.6958,
+          10.7754
+        ]
+      },
+      "label": "Điểm gửi xe",
+      "evidence_ids": [
+        "evidence_parking_hours"
+      ]
+    },
+    {
+      "id": "G1",
+      "place_id": null,
+      "type": "gate",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.6956,
+          10.7765
+        ]
+      },
+      "label": "Lối mặt tiền",
+      "evidence_ids": [
+        "evidence_g1_closed"
+      ]
+    },
+    {
+      "id": "G2",
+      "place_id": null,
+      "type": "gate",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.6966,
+          10.7758
+        ]
+      },
+      "label": "Lối phụ",
+      "evidence_ids": [
+        "evidence_g2_open"
+      ]
+    },
+    {
+      "id": "G3",
+      "place_id": null,
+      "type": "gate",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.6974,
+          10.7752
+        ]
+      },
+      "label": "Lối phụ thay thế",
+      "evidence_ids": [
+        "evidence_g3_open"
+      ]
+    },
+    {
+      "id": "J",
+      "place_id": null,
+      "type": "junction",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.6962,
+          10.7768
+        ]
+      },
+      "label": "Điểm nối",
+      "evidence_ids": [
+        "evidence_layout_survey"
+      ]
+    },
+    {
+      "id": "A",
+      "place_id": "place_a",
+      "type": "entrance",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.6968,
+          10.7768
+        ]
+      },
+      "label": "Cửa cửa hàng A",
+      "evidence_ids": [
+        "evidence_layout_survey"
+      ]
+    },
+    {
+      "id": "B",
+      "place_id": "place_b",
+      "type": "entrance",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.6962,
+          10.7774
+        ]
+      },
+      "label": "Cửa cửa hàng B",
+      "evidence_ids": [
+        "evidence_layout_survey"
+      ]
+    },
+    {
+      "id": "C",
+      "place_id": "place_c",
+      "type": "entrance",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.6942,
+          10.776
+        ]
+      },
+      "label": "Cửa cửa hàng C",
+      "evidence_ids": [
+        "evidence_layout_survey"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "e01",
+      "from_node": "O",
+      "to_node": "P",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.695,
+            10.776
+          ],
+          [
+            106.6958,
+            10.7754
+          ]
+        ]
+      },
+      "length_m": 100,
+      "allowed_modes": [
+        "motorcycle",
+        "walk"
+      ],
+      "direction": "both",
+      "evidence_ids": [
+        "evidence_layout_survey"
+      ]
+    },
+    {
+      "id": "e02",
+      "from_node": "O",
+      "to_node": "G1",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.695,
+            10.776
+          ],
+          [
+            106.6956,
+            10.7765
+          ]
+        ]
+      },
+      "length_m": 60,
+      "allowed_modes": [
+        "walk"
+      ],
+      "direction": "both",
+      "evidence_ids": [
+        "evidence_g1_closed"
+      ]
+    },
+    {
+      "id": "e03",
+      "from_node": "G1",
+      "to_node": "J",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.6956,
+            10.7765
+          ],
+          [
+            106.6962,
+            10.7768
+          ]
+        ]
+      },
+      "length_m": 20,
+      "allowed_modes": [
+        "walk"
+      ],
+      "direction": "both",
+      "evidence_ids": [
+        "evidence_g1_closed"
+      ]
+    },
+    {
+      "id": "e04",
+      "from_node": "P",
+      "to_node": "G2",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.6958,
+            10.7754
+          ],
+          [
+            106.6966,
+            10.7758
+          ]
+        ]
+      },
+      "length_m": 40,
+      "allowed_modes": [
+        "walk"
+      ],
+      "direction": "both",
+      "evidence_ids": [
+        "evidence_g2_open"
+      ]
+    },
+    {
+      "id": "e05",
+      "from_node": "G2",
+      "to_node": "J",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.6966,
+            10.7758
+          ],
+          [
+            106.6962,
+            10.7768
+          ]
+        ]
+      },
+      "length_m": 30,
+      "allowed_modes": [
+        "walk"
+      ],
+      "direction": "both",
+      "evidence_ids": [
+        "evidence_g2_open"
+      ]
+    },
+    {
+      "id": "e06",
+      "from_node": "P",
+      "to_node": "G3",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.6958,
+            10.7754
+          ],
+          [
+            106.6974,
+            10.7752
+          ]
+        ]
+      },
+      "length_m": 120,
+      "allowed_modes": [
+        "walk"
+      ],
+      "direction": "both",
+      "evidence_ids": [
+        "evidence_g3_open"
+      ]
+    },
+    {
+      "id": "e07",
+      "from_node": "G3",
+      "to_node": "J",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.6974,
+            10.7752
+          ],
+          [
+            106.6962,
+            10.7768
+          ]
+        ]
+      },
+      "length_m": 60,
+      "allowed_modes": [
+        "walk"
+      ],
+      "direction": "both",
+      "evidence_ids": [
+        "evidence_g3_open"
+      ]
+    },
+    {
+      "id": "e08",
+      "from_node": "J",
+      "to_node": "A",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.6962,
+            10.7768
+          ],
+          [
+            106.6968,
+            10.7768
+          ]
+        ]
+      },
+      "length_m": 20,
+      "allowed_modes": [
+        "walk"
+      ],
+      "direction": "both",
+      "evidence_ids": [
+        "evidence_layout_survey"
+      ]
+    },
+    {
+      "id": "e09",
+      "from_node": "J",
+      "to_node": "B",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.6962,
+            10.7768
+          ],
+          [
+            106.6962,
+            10.7774
+          ]
+        ]
+      },
+      "length_m": 35,
+      "allowed_modes": [
+        "walk"
+      ],
+      "direction": "both",
+      "evidence_ids": [
+        "evidence_layout_survey"
+      ]
+    },
+    {
+      "id": "e10",
+      "from_node": "O",
+      "to_node": "C",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.695,
+            10.776
+          ],
+          [
+            106.6942,
+            10.776
+          ]
+        ]
+      },
+      "length_m": 90,
+      "allowed_modes": [
+        "motorcycle",
+        "walk"
+      ],
+      "direction": "both",
+      "evidence_ids": [
+        "evidence_layout_survey"
+      ]
+    }
+  ],
+  "work_zones": [
+    {
+      "id": "zone_demo_a",
+      "name": "Khu demo A",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              106.6938,
+              10.774799999999999
+            ],
+            [
+              106.6978,
+              10.774799999999999
+            ],
+            [
+              106.6978,
+              10.777800000000001
+            ],
+            [
+              106.6938,
+              10.777800000000001
+            ],
+            [
+              106.6938,
+              10.774799999999999
+            ]
+          ]
+        ]
+      },
+      "source_ids": [
+        "evidence_layout_survey"
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "id": "rule_s0_g1_closed",
+      "target_type": "access_node",
+      "target_id": "G1",
+      "mode": [
+        "motorcycle",
+        "walk"
+      ],
+      "purpose": [
+        "customer"
+      ],
+      "direction": "both",
+      "effect": "closed",
+      "valid_from": "2026-10-01T00:00:00+07:00",
+      "valid_to": null,
+      "time_windows": [],
+      "evidence_ids": [
+        "evidence_g1_closed"
+      ],
+      "version": 1,
+      "is_simulated": true,
+      "verification_status": "demo_only"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "evidence_layout_survey",
+      "type": "survey",
+      "source_type": "synthetic",
+      "source_url": null,
+      "is_simulated": true,
+      "verification_status": "demo_only",
+      "review_status": "approved",
+      "created_at": "2026-09-25T02:00:00.000Z",
+      "observed_at": null,
+      "published_at": "2026-09-26T02:00:00.000Z",
+      "reviewed_at": "2026-09-26T02:00:00.000Z",
+      "review_due_at": "2026-10-02T02:00:00.000Z",
+      "authority_scope": "simulation_only",
+      "rights": "synthetic-internal",
+      "content": "Sơ đồ mạng Khu demo A do nhóm tạo để kiểm thử. Không phải khảo sát hiện trường."
+    },
+    {
+      "id": "evidence_g1_closed",
+      "type": "notice",
+      "source_type": "synthetic",
+      "source_url": null,
+      "is_simulated": true,
+      "verification_status": "demo_only",
+      "review_status": "approved",
+      "created_at": "2026-09-25T02:00:00.000Z",
+      "observed_at": null,
+      "published_at": "2026-09-26T02:00:00.000Z",
+      "reviewed_at": "2026-09-26T02:00:00.000Z",
+      "review_due_at": "2026-10-02T02:00:00.000Z",
+      "authority_scope": "simulation_only",
+      "rights": "synthetic-internal",
+      "content": "Lối mặt tiền G1 bị chặn trong trạng thái đầu của Khu demo A. Thông báo mô phỏng do nhóm tạo."
+    },
+    {
+      "id": "evidence_g2_open",
+      "type": "survey",
+      "source_type": "synthetic",
+      "source_url": null,
+      "is_simulated": true,
+      "verification_status": "demo_only",
+      "review_status": "needs_review",
+      "created_at": "2026-09-25T02:00:00.000Z",
+      "observed_at": null,
+      "published_at": "2026-09-26T02:00:00.000Z",
+      "reviewed_at": "2026-09-26T02:00:00.000Z",
+      "review_due_at": "2026-10-01T05:00:00.000Z",
+      "authority_scope": "simulation_only",
+      "rights": "synthetic-internal",
+      "content": "Lối phụ G2 dành cho khách đi bộ trong trạng thái đầu. Dữ liệu mô phỏng do nhóm tạo."
+    },
+    {
+      "id": "evidence_g3_open",
+      "type": "survey",
+      "source_type": "synthetic",
+      "source_url": null,
+      "is_simulated": true,
+      "verification_status": "demo_only",
+      "review_status": "approved",
+      "created_at": "2026-09-25T02:00:00.000Z",
+      "observed_at": null,
+      "published_at": "2026-09-26T02:00:00.000Z",
+      "reviewed_at": "2026-09-26T02:00:00.000Z",
+      "review_due_at": "2026-10-02T02:00:00.000Z",
+      "authority_scope": "simulation_only",
+      "rights": "synthetic-internal",
+      "content": "Lối phụ G3 dành cho khách đi bộ, dài hơn G2. Dữ liệu mô phỏng do nhóm tạo."
+    },
+    {
+      "id": "evidence_parking_hours",
+      "type": "survey",
+      "source_type": "synthetic",
+      "source_url": null,
+      "is_simulated": true,
+      "verification_status": "demo_only",
+      "review_status": "approved",
+      "created_at": "2026-09-25T02:00:00.000Z",
+      "observed_at": null,
+      "published_at": "2026-09-26T02:00:00.000Z",
+      "reviewed_at": "2026-09-26T02:00:00.000Z",
+      "review_due_at": "2026-10-02T02:00:00.000Z",
+      "authority_scope": "simulation_only",
+      "rights": "synthetic-internal",
+      "content": "Điểm P nhận gửi xe máy từ 06:00 đến trước 20:00 trong đồng hồ mô phỏng."
+    },
+    {
+      "id": "evidence_place_hours",
+      "type": "survey",
+      "source_type": "synthetic",
+      "source_url": null,
+      "is_simulated": true,
+      "verification_status": "demo_only",
+      "review_status": "approved",
+      "created_at": "2026-09-25T02:00:00.000Z",
+      "observed_at": null,
+      "published_at": "2026-09-26T02:00:00.000Z",
+      "reviewed_at": "2026-09-26T02:00:00.000Z",
+      "review_due_at": "2026-10-02T02:00:00.000Z",
+      "authority_scope": "simulation_only",
+      "rights": "synthetic-internal",
+      "content": "Cửa hàng A, B và C hoạt động từ 06:00 đến trước 22:00 trong kịch bản mô phỏng."
+    }
+  ],
+  "transfer_rules": [
+    {
+      "id": "transfer_p_motorcycle_walk",
+      "node_id": "P",
+      "from_mode": "motorcycle",
+      "to_mode": "walk",
+      "windows": [
+        {
+          "start": "06:00",
+          "end": "20:00"
+        }
+      ],
+      "transfer_seconds": 180,
+      "evidence_ids": [
+        "evidence_parking_hours"
+      ]
+    }
+  ]
+}

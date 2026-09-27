@@ -1,0 +1,305 @@
+[
+  {
+    "scenario_id": "S0",
+    "place_id": "place_a",
+    "mode": "motorcycle",
+    "depart_at": "2026-10-01T17:00:00+07:00",
+    "route_status": "available",
+    "legs": [
+      {
+        "edge_id": "e01",
+        "mode": "motorcycle"
+      },
+      {
+        "edge_id": "e04",
+        "mode": "walk"
+      },
+      {
+        "edge_id": "e05",
+        "mode": "walk"
+      },
+      {
+        "edge_id": "e08",
+        "mode": "walk"
+      }
+    ],
+    "walk_length_m": 90,
+    "derivation": "Đi bộ 40+30+20",
+    "reason_codes": []
+  },
+  {
+    "scenario_id": "S0",
+    "place_id": "place_b",
+    "mode": "motorcycle",
+    "depart_at": "2026-10-01T17:00:00+07:00",
+    "route_status": "available",
+    "legs": [
+      {
+        "edge_id": "e01",
+        "mode": "motorcycle"
+      },
+      {
+        "edge_id": "e04",
+        "mode": "walk"
+      },
+      {
+        "edge_id": "e05",
+        "mode": "walk"
+      },
+      {
+        "edge_id": "e09",
+        "mode": "walk"
+      }
+    ],
+    "walk_length_m": 105,
+    "derivation": "Đi bộ 40+30+35",
+    "reason_codes": []
+  },
+  {
+    "scenario_id": "S0",
+    "place_id": "place_c",
+    "mode": "motorcycle",
+    "depart_at": "2026-10-01T17:00:00+07:00",
+    "route_status": "available",
+    "legs": [
+      {
+        "edge_id": "e10",
+        "mode": "motorcycle"
+      }
+    ],
+    "walk_length_m": 0,
+    "derivation": "Không đi bộ",
+    "reason_codes": []
+  },
+  {
+    "scenario_id": "S1",
+    "place_id": "place_a",
+    "mode": "motorcycle",
+    "depart_at": "2026-10-01T18:05:00+07:00",
+    "route_status": "available",
+    "legs": [
+      {
+        "edge_id": "e01",
+        "mode": "motorcycle"
+      },
+      {
+        "edge_id": "e06",
+        "mode": "walk"
+      },
+      {
+        "edge_id": "e07",
+        "mode": "walk"
+      },
+      {
+        "edge_id": "e08",
+        "mode": "walk"
+      }
+    ],
+    "walk_length_m": 200,
+    "derivation": "Đi bộ 120+60+20",
+    "reason_codes": []
+  },
+  {
+    "scenario_id": "S1",
+    "place_id": "place_b",
+    "mode": "motorcycle",
+    "depart_at": "2026-10-01T18:05:00+07:00",
+    "route_status": "available",
+    "legs": [
+      {
+        "edge_id": "e01",
+        "mode": "motorcycle"
+      },
+      {
+        "edge_id": "e06",
+        "mode": "walk"
+      },
+      {
+        "edge_id": "e07",
+        "mode": "walk"
+      },
+      {
+        "edge_id": "e09",
+        "mode": "walk"
+      }
+    ],
+    "walk_length_m": 215,
+    "derivation": "Đi bộ 120+60+35",
+    "reason_codes": []
+  },
+  {
+    "scenario_id": "S1",
+    "place_id": "place_c",
+    "mode": "motorcycle",
+    "depart_at": "2026-10-01T18:05:00+07:00",
+    "route_status": "available",
+    "legs": [
+      {
+        "edge_id": "e10",
+        "mode": "motorcycle"
+      }
+    ],
+    "walk_length_m": 0,
+    "derivation": "C không dùng G2",
+    "reason_codes": []
+  },
+  {
+    "scenario_id": "S2",
+    "place_id": "place_a",
+    "mode": "motorcycle",
+    "depart_at": "2026-10-01T18:05:00+07:00",
+    "route_status": "no_plan_found",
+    "legs": [],
+    "walk_length_m": null,
+    "derivation": "G1 G2 G3 đóng",
+    "reason_codes": [
+      "no_plan_in_scope"
+    ]
+  },
+  {
+    "scenario_id": "S2",
+    "place_id": "place_b",
+    "mode": "motorcycle",
+    "depart_at": "2026-10-01T18:05:00+07:00",
+    "route_status": "no_plan_found",
+    "legs": [],
+    "walk_length_m": null,
+    "derivation": "G1 G2 G3 đóng",
+    "reason_codes": [
+      "no_plan_in_scope"
+    ]
+  },
+  {
+    "scenario_id": "S2",
+    "place_id": "place_c",
+    "mode": "motorcycle",
+    "depart_at": "2026-10-01T18:05:00+07:00",
+    "route_status": "available",
+    "legs": [
+      {
+        "edge_id": "e10",
+        "mode": "motorcycle"
+      }
+    ],
+    "walk_length_m": 0,
+    "derivation": "C giữ tuyến riêng",
+    "reason_codes": []
+  },
+  {
+    "scenario_id": "S3",
+    "place_id": "place_a",
+    "mode": "motorcycle",
+    "depart_at": "2026-10-01T20:05:00+07:00",
+    "route_status": "no_plan_found",
+    "legs": [],
+    "walk_length_m": null,
+    "derivation": "P hết giờ nhận xe",
+    "reason_codes": [
+      "transfer_unavailable"
+    ]
+  },
+  {
+    "scenario_id": "S3",
+    "place_id": "place_a",
+    "mode": "walk",
+    "depart_at": "2026-10-01T20:05:00+07:00",
+    "route_status": "available",
+    "legs": [
+      {
+        "edge_id": "e01",
+        "mode": "walk"
+      },
+      {
+        "edge_id": "e04",
+        "mode": "walk"
+      },
+      {
+        "edge_id": "e05",
+        "mode": "walk"
+      },
+      {
+        "edge_id": "e08",
+        "mode": "walk"
+      }
+    ],
+    "walk_length_m": 190,
+    "derivation": "Đi bộ qua P: 100+40+30+20",
+    "reason_codes": []
+  },
+  {
+    "scenario_id": "S4",
+    "place_id": "place_a",
+    "mode": "motorcycle",
+    "depart_at": "2026-10-01T17:00:00+07:00",
+    "route_status": "available",
+    "legs": [
+      {
+        "edge_id": "e01",
+        "mode": "motorcycle"
+      },
+      {
+        "edge_id": "e06",
+        "mode": "walk"
+      },
+      {
+        "edge_id": "e07",
+        "mode": "walk"
+      },
+      {
+        "edge_id": "e08",
+        "mode": "walk"
+      }
+    ],
+    "walk_length_m": 200,
+    "derivation": "G2 quá hạn, ưu tiên G3",
+    "reason_codes": [
+      "g2_needs_verification"
+    ]
+  },
+  {
+    "scenario_id": "S4",
+    "place_id": "place_b",
+    "mode": "motorcycle",
+    "depart_at": "2026-10-01T17:00:00+07:00",
+    "route_status": "available",
+    "legs": [
+      {
+        "edge_id": "e01",
+        "mode": "motorcycle"
+      },
+      {
+        "edge_id": "e06",
+        "mode": "walk"
+      },
+      {
+        "edge_id": "e07",
+        "mode": "walk"
+      },
+      {
+        "edge_id": "e09",
+        "mode": "walk"
+      }
+    ],
+    "walk_length_m": 215,
+    "derivation": "G2 quá hạn, B qua G3",
+    "reason_codes": [
+      "g2_needs_verification"
+    ]
+  },
+  {
+    "scenario_id": "S4",
+    "place_id": "place_c",
+    "mode": "motorcycle",
+    "depart_at": "2026-10-01T17:00:00+07:00",
+    "route_status": "available",
+    "legs": [
+      {
+        "edge_id": "e10",
+        "mode": "motorcycle"
+      }
+    ],
+    "walk_length_m": 0,
+    "derivation": "C không phụ thuộc G2",
+    "reason_codes": []
+  }
+]

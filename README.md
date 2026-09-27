@@ -6,9 +6,18 @@ Lớp bản đồ hỗ trợ người dùng tiếp cận địa điểm trong kh
 
 ## Trạng thái dự án
 
-Repository hiện lưu tài liệu thiết kế và hồ sơ ý tưởng. Chưa có mã nguồn ứng dụng, web demo hoạt động hoặc kết quả thử nghiệm thực địa.
+Đã có lớp dữ liệu và API công bố của Tú: fixture Khu demo A, snapshot có version, tìm địa điểm, lớp bản đồ, phản ánh và duyệt ChangeSet. Chưa có giao diện khách, engine tìm đường, trang admin, khảo sát thực địa hay kết quả thử nghiệm ngoài mock.
 
-Nhóm dự kiến xây prototype bằng dữ liệu mô phỏng có nhãn rõ. Các nội dung khảo sát và pilot trong proposal là kế hoạch tiếp theo; chưa phải hoạt động đã hoàn thành.
+Dữ liệu trong repo là mô phỏng. Nhãn `is_simulated` không bị tắt khi duyệt vào demo.
+
+```bash
+npm test
+npm run dev:api
+```
+
+API cục bộ mặc định chạy trên bộ nhớ, cổng 3001. Cần `DEMO_OPERATOR_TOKEN` và `DEMO_REVIEWER_TOKEN` thì gọi được API admin. Có PostGIS thì `docker compose up -d` rồi `npm run seed:demo`.
+
+Preview tuyến gọi `setAccessPlanner` do Kiên cung cấp. Khi engine chưa gắn, endpoint preview trả `PLANNER_UNAVAILABLE` và không đổi dữ liệu đã công bố.
 
 ## Hồ sơ gửi BTC
 

@@ -1,0 +1,569 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "zone/zone_demo_a",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              106.6938,
+              10.774799999999999
+            ],
+            [
+              106.6978,
+              10.774799999999999
+            ],
+            [
+              106.6978,
+              10.777800000000001
+            ],
+            [
+              106.6938,
+              10.777800000000001
+            ],
+            [
+              106.6938,
+              10.774799999999999
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "feature_type": "work_zone",
+        "id": "zone_demo_a",
+        "name": "Khu demo A",
+        "is_simulated": true
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place/place_a",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.6968,
+          10.7768
+        ]
+      },
+      "properties": {
+        "feature_type": "place",
+        "id": "place_a",
+        "name": "Cửa hàng A",
+        "entrance_node_id": "A",
+        "is_simulated": true
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place/place_b",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.6962,
+          10.7774
+        ]
+      },
+      "properties": {
+        "feature_type": "place",
+        "id": "place_b",
+        "name": "Cửa hàng B",
+        "entrance_node_id": "B",
+        "is_simulated": true
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place/place_c",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.6942,
+          10.776
+        ]
+      },
+      "properties": {
+        "feature_type": "place",
+        "id": "place_c",
+        "name": "Cửa hàng C",
+        "entrance_node_id": "C",
+        "is_simulated": true
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/O",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.695,
+          10.776
+        ]
+      },
+      "properties": {
+        "feature_type": "access_node",
+        "id": "O",
+        "node_type": "origin",
+        "label": "Điểm xuất phát",
+        "place_id": null,
+        "is_simulated": true
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/P",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.6958,
+          10.7754
+        ]
+      },
+      "properties": {
+        "feature_type": "access_node",
+        "id": "P",
+        "node_type": "parking",
+        "label": "Điểm gửi xe",
+        "place_id": null,
+        "is_simulated": true
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/G1",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.6956,
+          10.7765
+        ]
+      },
+      "properties": {
+        "feature_type": "access_node",
+        "id": "G1",
+        "node_type": "gate",
+        "label": "Lối mặt tiền",
+        "place_id": null,
+        "is_simulated": true
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/G2",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.6966,
+          10.7758
+        ]
+      },
+      "properties": {
+        "feature_type": "access_node",
+        "id": "G2",
+        "node_type": "gate",
+        "label": "Lối phụ",
+        "place_id": null,
+        "is_simulated": true
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/G3",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.6974,
+          10.7752
+        ]
+      },
+      "properties": {
+        "feature_type": "access_node",
+        "id": "G3",
+        "node_type": "gate",
+        "label": "Lối phụ thay thế",
+        "place_id": null,
+        "is_simulated": true
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/J",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.6962,
+          10.7768
+        ]
+      },
+      "properties": {
+        "feature_type": "access_node",
+        "id": "J",
+        "node_type": "junction",
+        "label": "Điểm nối",
+        "place_id": null,
+        "is_simulated": true
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/A",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.6968,
+          10.7768
+        ]
+      },
+      "properties": {
+        "feature_type": "access_node",
+        "id": "A",
+        "node_type": "entrance",
+        "label": "Cửa cửa hàng A",
+        "place_id": "place_a",
+        "is_simulated": true
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/B",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.6962,
+          10.7774
+        ]
+      },
+      "properties": {
+        "feature_type": "access_node",
+        "id": "B",
+        "node_type": "entrance",
+        "label": "Cửa cửa hàng B",
+        "place_id": "place_b",
+        "is_simulated": true
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/C",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.6942,
+          10.776
+        ]
+      },
+      "properties": {
+        "feature_type": "access_node",
+        "id": "C",
+        "node_type": "entrance",
+        "label": "Cửa cửa hàng C",
+        "place_id": "place_c",
+        "is_simulated": true
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "edge/e01",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.695,
+            10.776
+          ],
+          [
+            106.6958,
+            10.7754
+          ]
+        ]
+      },
+      "properties": {
+        "feature_type": "access_edge",
+        "id": "e01",
+        "from_node": "O",
+        "to_node": "P",
+        "length_m": 100,
+        "length_source": "fixture_table",
+        "allowed_modes": [
+          "motorcycle",
+          "walk"
+        ],
+        "direction": "both",
+        "is_simulated": true
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "edge/e02",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.695,
+            10.776
+          ],
+          [
+            106.6956,
+            10.7765
+          ]
+        ]
+      },
+      "properties": {
+        "feature_type": "access_edge",
+        "id": "e02",
+        "from_node": "O",
+        "to_node": "G1",
+        "length_m": 60,
+        "length_source": "fixture_table",
+        "allowed_modes": [
+          "walk"
+        ],
+        "direction": "both",
+        "is_simulated": true
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "edge/e03",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.6956,
+            10.7765
+          ],
+          [
+            106.6962,
+            10.7768
+          ]
+        ]
+      },
+      "properties": {
+        "feature_type": "access_edge",
+        "id": "e03",
+        "from_node": "G1",
+        "to_node": "J",
+        "length_m": 20,
+        "length_source": "fixture_table",
+        "allowed_modes": [
+          "walk"
+        ],
+        "direction": "both",
+        "is_simulated": true
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "edge/e04",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.6958,
+            10.7754
+          ],
+          [
+            106.6966,
+            10.7758
+          ]
+        ]
+      },
+      "properties": {
+        "feature_type": "access_edge",
+        "id": "e04",
+        "from_node": "P",
+        "to_node": "G2",
+        "length_m": 40,
+        "length_source": "fixture_table",
+        "allowed_modes": [
+          "walk"
+        ],
+        "direction": "both",
+        "is_simulated": true
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "edge/e05",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.6966,
+            10.7758
+          ],
+          [
+            106.6962,
+            10.7768
+          ]
+        ]
+      },
+      "properties": {
+        "feature_type": "access_edge",
+        "id": "e05",
+        "from_node": "G2",
+        "to_node": "J",
+        "length_m": 30,
+        "length_source": "fixture_table",
+        "allowed_modes": [
+          "walk"
+        ],
+        "direction": "both",
+        "is_simulated": true
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "edge/e06",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.6958,
+            10.7754
+          ],
+          [
+            106.6974,
+            10.7752
+          ]
+        ]
+      },
+      "properties": {
+        "feature_type": "access_edge",
+        "id": "e06",
+        "from_node": "P",
+        "to_node": "G3",
+        "length_m": 120,
+        "length_source": "fixture_table",
+        "allowed_modes": [
+          "walk"
+        ],
+        "direction": "both",
+        "is_simulated": true
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "edge/e07",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.6974,
+            10.7752
+          ],
+          [
+            106.6962,
+            10.7768
+          ]
+        ]
+      },
+      "properties": {
+        "feature_type": "access_edge",
+        "id": "e07",
+        "from_node": "G3",
+        "to_node": "J",
+        "length_m": 60,
+        "length_source": "fixture_table",
+        "allowed_modes": [
+          "walk"
+        ],
+        "direction": "both",
+        "is_simulated": true
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "edge/e08",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.6962,
+            10.7768
+          ],
+          [
+            106.6968,
+            10.7768
+          ]
+        ]
+      },
+      "properties": {
+        "feature_type": "access_edge",
+        "id": "e08",
+        "from_node": "J",
+        "to_node": "A",
+        "length_m": 20,
+        "length_source": "fixture_table",
+        "allowed_modes": [
+          "walk"
+        ],
+        "direction": "both",
+        "is_simulated": true
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "edge/e09",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.6962,
+            10.7768
+          ],
+          [
+            106.6962,
+            10.7774
+          ]
+        ]
+      },
+      "properties": {
+        "feature_type": "access_edge",
+        "id": "e09",
+        "from_node": "J",
+        "to_node": "B",
+        "length_m": 35,
+        "length_source": "fixture_table",
+        "allowed_modes": [
+          "walk"
+        ],
+        "direction": "both",
+        "is_simulated": true
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "edge/e10",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.695,
+            10.776
+          ],
+          [
+            106.6942,
+            10.776
+          ]
+        ]
+      },
+      "properties": {
+        "feature_type": "access_edge",
+        "id": "e10",
+        "from_node": "O",
+        "to_node": "C",
+        "length_m": 90,
+        "length_source": "fixture_table",
+        "allowed_modes": [
+          "motorcycle",
+          "walk"
+        ],
+        "direction": "both",
+        "is_simulated": true
+      }
+    }
+  ]
+}

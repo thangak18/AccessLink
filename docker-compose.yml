@@ -1,0 +1,9 @@
+services:
+  postgis:
+    image: postgis/postgis:16-3.4
+    environment:
+      POSTGRES_USER: accesslink
+      POSTGRES_PASSWORD: accesslink
+      POSTGRES_DB: accesslink
+    ports:
+      - "5432:5432"

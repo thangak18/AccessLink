@@ -6,18 +6,28 @@ Lớp bản đồ hỗ trợ người dùng tiếp cận địa điểm trong kh
 
 ## Trạng thái dự án
 
-Đã có lớp dữ liệu và API công bố của Tú: fixture Khu demo A, snapshot có version, tìm địa điểm, lớp bản đồ, phản ánh và duyệt ChangeSet. Chưa có giao diện khách, engine tìm đường, trang admin, khảo sát thực địa hay kết quả thử nghiệm ngoài mock.
+Nhánh `Thang` bổ sung web khách Next.js và bản đồ tương tác trên phần dữ liệu/API của Tú. Có tìm/chọn địa điểm, phương tiện, giờ, hiển thị chặng, nguồn, phản ánh và các trạng thái lỗi. Chế độ kịch bản hiển thị đáp án fixture có nhãn; chế độ API chờ engine của Kiên, không dùng đáp án mẫu thay thế. Chưa có engine thật, trang admin/AI, khảo sát thực địa hay kết quả thử nghiệm ngoài mock.
 
 Dữ liệu trong repo là mô phỏng. Nhãn `is_simulated` không bị tắt khi duyệt vào demo.
 
 ```bash
-npm test
-npm run dev:api
+npm ci
+npm run dev
+# http://localhost:3000
+# npm run build && npm start: bản production
 ```
 
-API cục bộ mặc định chạy trên bộ nhớ, cổng 3001. Cần `DEMO_OPERATOR_TOKEN` và `DEMO_REVIEWER_TOKEN` thì gọi được API admin. Có PostGIS thì `docker compose up -d` rồi `npm run seed:demo`.
+Web và API chạy cùng Next.js ở cổng 3000. API mặc định vẫn dùng bộ nhớ, chưa nối PostgreSQL trong runtime. Script cũ `npm run dev:api` chỉ chạy API ở cổng 3001. Cần `DEMO_OPERATOR_TOKEN` và `DEMO_REVIEWER_TOKEN` thì gọi được API admin. Có PostGIS thì `docker compose up -d` rồi `npm run seed:demo`.
 
 Preview tuyến gọi `setAccessPlanner` do Kiên cung cấp. Khi engine chưa gắn, endpoint preview trả `PLANNER_UNAVAILABLE` và không đổi dữ liệu đã công bố.
+
+## Bàn giao nhánh Thang
+
+- [Hướng dẫn chạy, component map và hợp đồng tích hợp](docs/THANG_HANDOFF.md)
+- [Kịch bản pitch và quay video fixture](docs/THANG_DEMO_SCRIPT.md)
+- [Xem ảnh giao diện](output/screenshots/AccessLink_Thang_Desktop.png) · [Video UI dùng đáp án mẫu](output/video/AccessLink_Thang_UI_Fixture_Demo.webm)
+- `npm test`, `npm run typecheck`, `npm run build`, `npm run test:e2e` để kiểm tra.
+- `npm run demo:record` khi app đang chạy để quay video minh họa UI.
 
 ## Hồ sơ gửi BTC
 

@@ -23,6 +23,8 @@ Thang và Bao chia hai giao diện; Kien và Tu chia tính toán nghiệp vụ v
 
 ## 2. Thang - Web khách, bản đồ và tích hợp
 
+**Cập nhật 01/10/2026:** nhánh `Thang` đã triển khai giao diện khách, bản đồ dùng chung, hai chế độ fixture/API, phản ánh, đồng bộ phiên bản và bộ kiểm thử. Chi tiết, bằng chứng kiểm tra và phần còn chờ tích hợp: [Bàn giao Thang](docs/THANG_HANDOFF.md). Chưa nghiệm thu end-to-end bằng engine/admin thật.
+
 ### Công việc bắt buộc
 
 - [ ] Khởi tạo cấu trúc ứng dụng, quy ước giao diện, scripts chạy/build và `.env.example` chỉ có tên biến/giá trị mẫu.

@@ -17,3 +17,8 @@ node_modules/
 .next/
 dist/
 coverage/
+
+# Browser QA and TypeScript cache
+test-results/
+playwright-report/
+*.tsbuildinfo

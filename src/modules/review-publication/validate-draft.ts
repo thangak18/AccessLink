@@ -1,5 +1,5 @@
-import type { AccessRule, DatasetSnapshot, Evidence } from "../../contracts/types";
-import { DomainError } from "../../domain/errors";
+import type { AccessRule, DatasetSnapshot, Evidence } from "@/contracts/types";
+import { DomainError } from "@/domain/errors";
 
 export function validateDraft(snapshot: DatasetSnapshot, rules: AccessRule[], evidence: Evidence[]): void {
   if (rules.length === 0 && evidence.length === 0) {

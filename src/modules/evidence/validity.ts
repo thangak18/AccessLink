@@ -1,4 +1,4 @@
-import type { AccessRule, Evidence, TimeWindow } from "../../contracts/types";
+import type { AccessRule, Evidence, TimeWindow } from "@/contracts/types";
 
 const ZONE = "Asia/Ho_Chi_Minh";
 

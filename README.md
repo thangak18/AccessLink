@@ -21,24 +21,34 @@ Web và API chạy cùng Next.js ở cổng 3000. API mặc định vẫn dùng 
 
 Preview tuyến gọi `setAccessPlanner` do Kiên cung cấp. Khi engine chưa gắn, endpoint preview trả `PLANNER_UNAVAILABLE` và không đổi dữ liệu đã công bố.
 
+## Cấu trúc và cách đóng góp
+
+- `src/`: ứng dụng, features, component dùng chung, nghiệp vụ, adapters, HTTP và bộ sinh demo.
+- `data/demo/`: bản xuất JSON/GeoJSON; `tests/`: unit, integration, e2e.
+- `scripts/`: tác vụ build, database và demo.
+- `docs/`: sản phẩm, kiến trúc, phân công, bàn giao và PDF gửi BTC.
+- `artifacts/`: ảnh/video được chọn để bàn giao.
+
+Xem [cấu trúc chi tiết và bảng đổi đường dẫn](docs/architecture/repository-layout.md), [mục lục tài liệu](docs/README.md) và [quy ước đóng góp](CONTRIBUTING.md).
+
 ## Bàn giao nhánh Thang
 
-- [Hướng dẫn chạy, component map và hợp đồng tích hợp](docs/THANG_HANDOFF.md)
-- [Kịch bản pitch và quay video fixture](docs/THANG_DEMO_SCRIPT.md)
-- [Xem ảnh giao diện](output/screenshots/AccessLink_Thang_Desktop.png) · [Video UI dùng đáp án mẫu](output/video/AccessLink_Thang_UI_Fixture_Demo.webm)
+- [Hướng dẫn chạy, component map và hợp đồng tích hợp](docs/handoffs/thang.md)
+- [Kịch bản pitch và quay video fixture](docs/demo/presentation-script.md)
+- [Xem ảnh giao diện](artifacts/screenshots/AccessLink_Thang_Desktop.png) · [Video UI dùng đáp án mẫu](artifacts/videos/AccessLink_Thang_UI_Fixture_Demo.webm)
 - `npm test`, `npm run typecheck`, `npm run build`, `npm run test:e2e` để kiểm tra.
 - `npm run demo:record` khi app đang chạy để quay video minh họa UI.
 
 ## Hồ sơ gửi BTC
 
-- [Bản draft ý tưởng AccessLink (PDF, 4 trang)](output/pdf/NexRoute_AccessLink_01_Draft_Y_Tuong.pdf)
-- [Kế hoạch tiếp theo và câu hỏi gửi BTC/TASCO (PDF, 3 trang)](output/pdf/NexRoute_AccessLink_02_Ke_Hoach_Tiep_Theo.pdf)
+- [Bản draft ý tưởng AccessLink (PDF, 4 trang)](docs/submissions/NexRoute_AccessLink_01_Draft_Y_Tuong.pdf)
+- [Kế hoạch tiếp theo và câu hỏi gửi BTC/TASCO (PDF, 3 trang)](docs/submissions/NexRoute_AccessLink_02_Ke_Hoach_Tiep_Theo.pdf)
 
 ## Tài liệu thiết kế
 
-- [Proposal](TASCO_AccessLink_Proposal.md)
-- [Requirements và kiến trúc](TASCO_AccessLink_Requirements_Architecture.md)
-- [Kịch bản mock data và hướng chuyển sang dữ liệu thật](TASCO_AccessLink_Kich_Ban_Mock_Data.md)
+- [Proposal](docs/product/proposal.md)
+- [Requirements và kiến trúc](docs/architecture/requirements.md)
+- [Kịch bản mock data và hướng chuyển sang dữ liệu thật](docs/demo/mock-data.md)
 
 Đọc hồ sơ PDF để nắm phạm vi trình bày với BTC; đọc tài liệu mock để hiểu phương án prototype khi chưa thể khảo sát. Các lựa chọn kỹ thuật trong tài liệu là đề xuất triển khai.
 

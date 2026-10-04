@@ -1,6 +1,6 @@
 import { z } from "zod";
-import type { AccessRule, Evidence } from "../../contracts/types";
-import { DomainError } from "../../domain/errors";
+import type { AccessRule, Evidence } from "@/contracts/types";
+import { DomainError } from "@/domain/errors";
 
 const timeWindow = z.object({
   start: z.string().regex(/^\d{2}:\d{2}$/),

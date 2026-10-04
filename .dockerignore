@@ -4,7 +4,8 @@ node_modules
 tmp
 .env
 .env.*
-output
+artifacts
+docs
 test-results
 playwright-report
 *.tsbuildinfo

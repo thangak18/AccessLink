@@ -1,4 +1,4 @@
-import type { ChangeSet, DatasetSnapshot } from "../../contracts/types";
+import type { ChangeSet, DatasetSnapshot } from "@/contracts/types";
 
 /**
  * Ghép rule và bằng chứng của một bản nháp vào bản sao snapshot.

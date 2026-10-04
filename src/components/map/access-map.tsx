@@ -4,12 +4,12 @@ import L from "leaflet";
 import type {
   LayerData,
   MapSelection,
-  PublicPlan,
-} from "../../lib/public/contracts";
+  MapRoute,
+} from "@/contracts/map";
 
 export type AccessMapProps = {
   layer: LayerData;
-  plan: PublicPlan | null;
+  plan: MapRoute | null;
   mode: "motorcycle" | "walk";
   selectedIds: string[];
   onSelect: (selection: MapSelection) => void;

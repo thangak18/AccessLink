@@ -3,16 +3,18 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "test": "tsx scripts/emit-fixtures.ts && vitest run",
-    "typecheck": "tsc --noEmit",
-    "dev:api": "tsx src/server.ts",
-    "seed:demo": "tsx src/infrastructure/db/seed-demo.ts",
-    "emit:fixtures": "tsx scripts/emit-fixtures.ts",
+    "test": "tsx scripts/demo/emit-fixtures.ts && vitest run",
+    "typecheck": "next typegen && tsc --noEmit",
+    "dev:api": "tsx src/server/index.ts",
+    "seed:demo": "tsx scripts/database/seed-demo.ts",
+    "emit:fixtures": "tsx scripts/demo/emit-fixtures.ts",
     "dev": "next dev",
-    "build": "next build && node scripts/prepare-standalone.mjs",
+    "build": "next build && node scripts/build/prepare-standalone.mjs",
     "start": "node .next/standalone/server.js",
     "test:e2e": "playwright test",
-    "demo:record": "node scripts/record-demo.mjs"
+    "demo:record": "node scripts/demo/record-demo.mjs",
+    "test:unit": "vitest run tests/unit",
+    "test:integration": "vitest run tests/integration"
   },
   "dependencies": {
     "leaflet": "^1.9.4",

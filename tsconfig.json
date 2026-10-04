@@ -25,11 +25,15 @@
         "name": "next"
       }
     ],
-    "allowJs": true
+    "allowJs": true,
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    }
   },
   "include": [
     "src",
-    "fixtures",
     "tests",
     "scripts",
     "next-env.d.ts",

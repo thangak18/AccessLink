@@ -5,10 +5,11 @@ import type {
   DatasetSnapshot,
   Evidence,
   TravelMode,
-} from "../../contracts/types";
-import { isEvidenceStale, isRuleActiveAt, windowContainsInstant } from "./validity";
+} from "@/contracts/types";
+import { isEvidenceStale, isRuleActiveAt, windowContainsInstant } from "@/modules/evidence/validity";
 
-export type DisplayStatus = "open" | "closed" | "needs_verification" | "not_allowed";
+import type { DisplayStatus, LayerFlag } from "@/contracts/map";
+export type { DisplayStatus, LayerFlag } from "@/contracts/map";
 
 const MODES: TravelMode[] = ["motorcycle", "walk"];
 
@@ -74,12 +75,6 @@ export function edgeStatus(
   return freshness(evidenceById(snapshot, edge.evidence_ids), at);
 }
 
-export type LayerFlag = {
-  target_type: "access_node" | "access_edge";
-  target_id: string;
-  mode: TravelMode;
-  status: DisplayStatus;
-};
 
 export function layerFlags(snapshot: DatasetSnapshot, at: Date): LayerFlag[] {
   const flags: LayerFlag[] = [];

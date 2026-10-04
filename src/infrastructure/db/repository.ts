@@ -3,7 +3,7 @@ import type {
   ChangeSet,
   DatasetSnapshot,
   Report,
-} from "../../contracts/types";
+} from "@/contracts/types";
 
 export interface DatasetLock {
   readonly currentVersion: number;

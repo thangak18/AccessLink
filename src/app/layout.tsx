@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "leaflet/dist/leaflet.css";
-import "./globals.css";
+import "@/app/globals.css";
 export const metadata: Metadata = {
   title: "AccessLink · Lối Tiếp Cận",
   description:

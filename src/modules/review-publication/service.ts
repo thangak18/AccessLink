@@ -7,10 +7,10 @@ import type {
   PlanQuery,
   PlanResult,
   Report,
-} from "../../contracts/types";
-import { DomainError } from "../../domain/errors";
-import type { DatasetRepository } from "../../infrastructure/db/repository";
-import { applyChangeset } from "./apply";
+} from "@/contracts/types";
+import { DomainError } from "@/domain/errors";
+import type { DatasetRepository } from "@/infrastructure/db/repository";
+import { applyChangeset } from "@/modules/review-publication/apply";
 import {
   createChangesetBody,
   parseBody,
@@ -19,8 +19,8 @@ import {
   reportBody,
   sealEvidence,
   sealRule,
-} from "./schema";
-import { validateDraft } from "./validate-draft";
+} from "@/modules/review-publication/schema";
+import { validateDraft } from "@/modules/review-publication/validate-draft";
 
 export type Actor = { id: string; role: "operator" | "reviewer" };
 

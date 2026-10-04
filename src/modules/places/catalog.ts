@@ -1,14 +1,10 @@
-import type { DatasetSnapshot, Place } from "../../contracts/types";
-import { DomainError } from "../../domain/errors";
-import type { DatasetRepository } from "../../infrastructure/db/repository";
-import { layerFlags, parkingAccepts, type LayerFlag } from "../evidence/layer-status";
+import type { DatasetSnapshot, Place } from "@/contracts/types";
+import { DomainError } from "@/domain/errors";
+import type { DatasetRepository } from "@/infrastructure/db/repository";
+import { layerFlags, parkingAccepts, type LayerFlag } from "@/modules/evidence/layer-status";
 
-export type GeoJsonFeature = {
-  type: "Feature";
-  id: string;
-  geometry: Place["location"] | DatasetSnapshot["edges"][number]["geometry"] | DatasetSnapshot["work_zones"][number]["geometry"];
-  properties: Record<string, unknown>;
-};
+import type { GeoJsonFeature } from "@/contracts/map";
+export type { GeoJsonFeature } from "@/contracts/map";
 
 function fold(value: string): string {
   return value.normalize("NFD").replace(/\p{M}/gu, "").toLowerCase().trim();

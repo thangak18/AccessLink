@@ -2,9 +2,9 @@ import { readFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import pg from "pg";
-import type { AuditEntry, ChangeSet, DatasetSnapshot, Report } from "../../contracts/types";
-import { DomainError } from "../../domain/errors";
-import type { DatasetLock, DatasetRepository } from "./repository";
+import type { AuditEntry, ChangeSet, DatasetSnapshot, Report } from "@/contracts/types";
+import { DomainError } from "@/domain/errors";
+import type { DatasetLock, DatasetRepository } from "@/infrastructure/db/repository";
 
 const migrationSql = readFileSync(
   join(dirname(fileURLToPath(import.meta.url)), "migrations", "001_init.sql"),

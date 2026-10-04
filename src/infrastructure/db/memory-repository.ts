@@ -1,6 +1,6 @@
-import type { AuditEntry, ChangeSet, DatasetSnapshot, Report } from "../../contracts/types";
-import { DomainError } from "../../domain/errors";
-import type { DatasetLock, DatasetRepository } from "./repository";
+import type { AuditEntry, ChangeSet, DatasetSnapshot, Report } from "@/contracts/types";
+import { DomainError } from "@/domain/errors";
+import type { DatasetLock, DatasetRepository } from "@/infrastructure/db/repository";
 
 type Bag = {
   currentVersion: number;
